@@ -30,10 +30,11 @@ class MainTest {
             assertEquals(tituloNota, tituloReal);
             assertEquals(conteudoNota, corpoReal);
 
+            page.waitForTimeout(5000);
+
             browser.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-
 }

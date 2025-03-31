@@ -4,7 +4,6 @@ import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
-import com.test.trabalho.jc.entidade.Aluno;
 
 import java.util.Scanner;
 
@@ -14,7 +13,7 @@ public class Main {
             Browser browser = playwright.webkit()
                     .launch(new BrowserType.LaunchOptions().setHeadless(false));
             Page page = browser.newPage();
-            page.navigate("https://pt.anotepad.com/");
+            page.navigate("https://pt.anotepad.com");
             System.out.println(page.title());
 
             page.getByPlaceholder("Título da Nota").fill("Entrega trabalho TEST DAS 2024");
